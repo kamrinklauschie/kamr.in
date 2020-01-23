@@ -1,2 +1,0 @@
-class InteriorDesign < ApplicationRecord
-end
