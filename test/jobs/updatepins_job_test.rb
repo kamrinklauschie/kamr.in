@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class InteriorDesignTest < ActiveSupport::TestCase
+class UpdatepinsJobTest < ActiveJob::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -10,41 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_20_194108) do
+ActiveRecord::Schema.define(version: 2020_01_23_005904) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "interior_designs", force: :cascade do |t|
-    t.string "url"
-    t.string "string"
+  create_table "pins", force: :cascade do |t|
+    t.string "pin_url"
+    t.string "img_url"
     t.string "color"
-    t.string "link"
     t.string "board"
-    t.string "width"
-    t.string "integer"
-    t.string "height"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "patterns", force: :cascade do |t|
-    t.string "url"
-    t.string "string"
-    t.string "color"
-    t.string "link"
-    t.string "board"
-    t.string "width"
-    t.string "integer"
-    t.string "height"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "quotes", force: :cascade do |t|
-    t.string "text"
-    t.string "string"
-    t.string "label"
+    t.integer "width"
+    t.integer "height"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
