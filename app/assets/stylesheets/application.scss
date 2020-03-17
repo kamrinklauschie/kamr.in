@@ -11,3 +11,88 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  position: relative;
+}
+
+.red-blob {
+  top: -200px;
+  left: -200px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.orange-blob {
+  top: -200px;
+  right: -200px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.yellow-blob {
+  top: 250px;
+  right: -250px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.seafoam-blob {
+  bottom: 75px;
+  right: -200px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.green-blob {
+  bottom: -300px;
+  right: 25px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.dark-green-blob {
+  bottom: -300px;
+  left: 400px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.blue-blob {
+  bottom: -250px;
+  left: -30px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.dark-blue-blob {
+  bottom: 100px;
+  left: -200px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}
+
+.purple-blob {
+  top: 250px;
+  left: -200px;
+  z-index: -1;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+}

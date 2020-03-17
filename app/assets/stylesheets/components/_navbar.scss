@@ -1,6 +1,6 @@
 .navbar-kamrin {
   justify-content: space-between;
-  background: white;
+  // background: $light-gray;
   padding-left: 100px;
   padding-right: 100px;
   font-size: 16px;
@@ -9,4 +9,6 @@
 .navbar-kamrin .navbar-brand {
   font-family: $brand-font;
   font-size: 50px;
+  color: $teal;
 }
+

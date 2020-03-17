@@ -1,4 +1,4 @@
-.btn {
+.btn-small {
   color: white;
   padding: 2px 6px;
   border-radius: 4px;
@@ -9,5 +9,19 @@
 
 .btn:hover {
   background: black;
+  color: white;
+}
+
+.btn-nav {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: $teal;
+  transition: background 0.3s ease;
+  font-family: $headers-font;
+}
+
+.btn-nav:hover {
+  background: $teal;
   color: white;
 }
