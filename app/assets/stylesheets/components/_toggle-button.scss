@@ -1,78 +1,115 @@
-.checkbox-switch {
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-  justify-content: center;
+html {
+  font-size: 62.5%;
+}
 
-.checkbox-switch-container {
-    display: inline-block;
-    position: relative;
-    width: 70px;
-    height: 26px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-right: 0.5rem;
+.switch {
+
+  &:not(:last-of-type) {
+    margin-right: 4rem;
   }
 
-  .checkbox {
+  &__label {
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
     cursor: pointer;
-    z-index: 3;
   }
 
-  .knobs {
-    z-index: 2;
+  &__input {
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
   }
-}
 
-// Switch off background color
-.layer {
-  width: 100%;
-  background-color: #f2f2f2;
-  transition: 0.3s ease all;
-  z-index: 1;
-}
+  &__input:focus+&__design {
+    box-shadow: 0 0 0 .1rem var(--global-background), 0 0 0 .2rem var(--focus);
+  }
 
-#button-13 .knobs:before, #button-13 .knobs:after, #button-13 .knobs span {
-  position: absolute;
-  border-radius: 10px;
-  transition: 0.3s ease all;
-}
+  // variables
+  // ----------------------------------------------------
+  & {
+    --width: 6rem;
+    --height: 3rem;
 
-// Switch on knob color
-#button-13 .knobs:before, #button-13 .knobs:after {
-  color: #FCBDE5;
-  z-index: 1;
-}
+    --background: hsl(0, 0%, 30%);
+    --checked-background: var(--primary-dark);
 
-#button-13 .knobs:before {
-  left: 4px;
-}
+    --thumb-size: 1.6rem;
+    --thumb-ripple-color: var(--ripple);
+    --thumb-background: hsl(0, 0%, 65%);
+    --checked-thumb-background: var(--primary-light);
+    --thumb-space-between-edges: .6rem;
+    --thumb-out: var(--thumb-space-between-edges);
+  }
 
-#button-13 .knobs:after {
-  right: 4px;
-}
+  &--7 {
+    --width: 4rem;
+    --height: 1.6rem;
 
-// Switch off knob color
-#button-13 .knobs span {
-  width: 25px;
-  left: 37px;
-  background-color: #4e4e4e;
-  z-index: 2;
-}
+    --thumb-size: 2rem;
+    --thumb-space-between-edges: 0rem;
+    --thumb-out: -.3rem;
+  }
 
-// ???
-#button-13 .checkbox:checked + .knobs span {
-  left: 4px;
-  background-color: #fcbde5;
-}
+  &--7 {
+    --width: 3rem;
+    --thumb-out: calc((var(--thumb-size) / 2) - ((var(--thumb-size) / 2) * 2) + .2rem);
+  }
 
-// Switch on background color
-#button-13 .checkbox:checked ~ .layer {
-  background-color: #fcf0f8;
+  // appearance
+  // ----------------------------------------------------
+  &__design {
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    border: var(--border);
+    border-radius: 100rem;
+    background: var(--background);
+    position: relative;
+    transition: .2s, box-shadow 0s;
+  }
+
+  &__design::before {
+    content: '';
+
+    position: absolute;
+    left: var(--thumb-out);
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: 100rem;
+
+    background: var(--thumb-background);
+
+    transition: inherit;
+  }
+
+  &--7 &__input:not(:checked)+&__design {
+    --thumb-ripple-color: hsla(0, 0%, 65%, .1);
+  }
+
+  // states
+  // ----------------------------------------------------
+  &__input:checked+&__design {
+    border-color: transparent;
+    background: var(--checked-background);
+  }
+
+  &__input:checked+&__design::before {
+    left: calc(100% - (var(--thumb-size) + var(--thumb-out)));
+    background: var(--checked-thumb-background);
+  }
+
+  &--7 &__design:hover::before,
+  &--7 &__input:focus+&__design::before {
+    box-shadow: 0 0 0 .9rem var(--thumb-ripple-color);
+  }
+
+  &--6 &__design:active::before {
+    width: calc(var(--thumb-size) + .4rem);
+  }
 }

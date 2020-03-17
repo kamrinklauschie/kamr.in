@@ -1,18 +1,21 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-kamrin">
-  <a class="navbar-brand" href="home">
-    K
+  <div class="red-blob-container">
+  </div>
+  <%= link_to "K", home_path, class: "navbar-brand" %>
   </a>
   <div class="">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="about">About</a>
+        <%= link_to "About", about_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="portfolio">Portfolio</a>
+        <%= link_to "Portfolio", portfolio_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact">Contact</a>
+        <%= link_to "Contact", contact_path, class: "btn-nav" %>
       </li>
     </ul>
+  </div>
+  <div class="orange-blob-container">
   </div>
 </div>
