@@ -1,1 +1,5 @@
-<script src="/path/to/masonry.pkgd.min.js"></script>
+$(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+
+});
