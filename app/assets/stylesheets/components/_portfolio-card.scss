@@ -1,0 +1,47 @@
+.portfolio-card {
+  min-width: 400px;
+  max-width: 450px;
+  margin: auto;
+  overflow: hidden;
+  display: grid;
+  grid: 340px auto auto/repeat(3, minmax(80px, 1fr));
+  grid-gap: 10px;
+  margin: 0;
+  background-color: $red;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+}
+
+.portfolio-img {
+  grid-column: span 3;
+  grid-column-start: span 3;
+  grid-column-end: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 7px solid black;
+  background-color: $orange;
+}
+
+.portfolio-card-title {
+  margin-bottom: 10px;
+  grid-column: span 3;
+  margin: 20px 25px 0;
+}
+
+.portfolio-card-description {
+
+}
+
+.portfolio-card-classification {
+  margin: 5px 25px;
+}
+
+.portfolio-stats-info {
+  margin-bottom: 10px;
+}
+
+.portfolio-button {
+  grid-column: span 3;
+  margin: 0 25px 25px;
+}
