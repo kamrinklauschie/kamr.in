@@ -7,31 +7,48 @@
   padding: 50px 100px 50px 100px;
 }
 
-.about h1 {
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.about-text {
+  align-self: center;
+}
+
+.about-text * {
   font-size: 80px;
   font-family: $brand-font;
+
 }
 
 .rio {
-background: -webkit-linear-gradient(left, rgba(236,91,85,1) 0%, rgba(240,140,52,1) 5%, rgba(249,221,108,1) 10%);
-background: -o-linear-gradient(left, rgba(236,91,85,1) 0%, rgba(240,140,52,1) 5%, rgba(249,221,108,1) 10%);
-background: linear-gradient(to right, rgba(236,91,85,1) 0%, rgba(240,140,52,1) 5%, rgba(249,221,108,1) 10%);
+  font-size: 75px;
+  display: inline;
+background: -webkit-linear-gradient(left, rgba(236,91,85,1) 25%, rgba(240,140,52,1) 50%, rgba(249,221,108,1) 75%);
+background: -o-linear-gradient(left, rgba(236,91,85,1) 25%, rgba(240,140,52,1) 50%, rgba(249,221,108,1) 75%);
+background: linear-gradient(to right, rgba(236,91,85,1) 25%, rgba(240,140,52,1) 50%, rgba(249,221,108,1) 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .de {
-background: -webkit-linear-gradient(left, rgba(169,209,213,1) 0%, rgba(73,197,182,1) 5%, rgba(56,129,116,1) 10%);
-background: -o-linear-gradient(left, rgba(169,209,213,1) 0%, rgba(73,197,182,1) 5%, rgba(56,129,116,1) 10%);
-background: linear-gradient(to right, rgba(169,209,213,1) 0%, rgba(73,197,182,1) 5%, rgba(56,129,116,1) 10%);
+  font-size: 75px;
+  display: inline;
+background: -webkit-linear-gradient(left, rgba(169,209,213,1) 25%, rgba(73,197,182,1) 50%, rgba(56,129,116,1) 75%);
+background: -o-linear-gradient(left, rgba(169,209,213,1) 25%, rgba(73,197,182,1) 50%, rgba(56,129,116,1) 75%);
+background: linear-gradient(to right, rgba(169,209,213,1) 25%, rgba(73,197,182,1) 50%, rgba(56,129,116,1) 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .janeiro {
-background: -webkit-linear-gradient(left, rgba(57,131,221,1) 0%, rgba(74,93,230,1) 8%, rgba(122,85,231,1) 16%);
-background: -o-linear-gradient(left, rgba(57,131,221,1) 0%, rgba(74,93,230,1) 8%, rgba(122,85,231,1) 16%);
-background: linear-gradient(to right, rgba(57,131,221,1) 0%, rgba(74,93,230,1) 8%, rgba(122,85,231,1) 16%);
+  font-size: 75px;
+  display: inline;
+background: -webkit-linear-gradient(left, rgba(57,131,221,1) 25%, rgba(74,93,230,1) 50%, rgba(122,85,231,1) 75%);
+background: -o-linear-gradient(left, rgba(57,131,221,1) 25%, rgba(74,93,230,1) 50%, rgba(122,85,231,1) 75%);
+background: linear-gradient(to right, rgba(57,131,221,1) 25%, rgba(74,93,230,1) 50%, rgba(122,85,231,1) 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -40,18 +57,31 @@ background: linear-gradient(to right, rgba(57,131,221,1) 0%, rgba(74,93,230,1) 8
   background-image: url("https://i.imgur.com/BfTC27m.jpg");
   height: 350px;
   width: 400px;
+  position: relative;
+  display: grid;
+  justify-items: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
 }
 
+.about-social-media {
+  font-size: 24px;
+  position: absolute;
+  bottom: -40px;
+  color: $black;
+}
+
 .about h2 {
+  margin-top: 50px;
   font-size: 40px;
+  text-align: center;
 }
 
 .about p {
+  margin-top: 10px;
   font-size: 16px;
   font-family: $accent-font;
   padding-left: 50px;
