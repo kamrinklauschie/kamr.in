@@ -6,7 +6,6 @@ class UpdatePinsJob < ApplicationJob
   def fetch_pinterest_api(board)
     pinterest_api = "https://api.pinterest.com/v1/boards/kamrinklauschie/#{board}/pins/?access_token=#{ENV['PINTEREST_API_KEY']}&limit=100&fields=url%2Cboard%2Ccolor%2Cimage"
 
-    Pin.destroy_all
     pin_json = open(pinterest_api).read
     pin_info = JSON.parse(pin_json)
     pin_array = pin_info["data"]
@@ -23,7 +22,7 @@ class UpdatePinsJob < ApplicationJob
   end
 
   def perform
-    boards_array = ["interior-design", "patterns-textures"]
+    boards_array = ["interior-design", "patterns-textures", "heroes", "libraries", "coffee-shops", "travel", "art", "plants"]
 
     boards_array.each do |board|
       fetch_pinterest_api(board)
