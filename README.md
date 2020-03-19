@@ -1,6 +1,6 @@
 ![Image of Logo](https://i.imgur.com/hoXPuFR.png)
 
-### kamr.in is an inspiration blog run by Kamrin Klauschie. Expect quotes, books, photography, interior design, art, travel, nature, beauty, and fun.
+## kamr.in is an inspiration blog run by Kamrin Klauschie. Expect quotes, books, photography, interior design, art, travel, nature, beauty, and fun.
 
 # Background 💡
 
