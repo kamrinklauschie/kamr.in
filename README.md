@@ -22,6 +22,7 @@ Coming Soon!
 Coming Soon! 
 
 # Support 🧩
-Feel free to email the founder and creator of apprenticeship.io, Kamrin Klauschie, at kam@apprenticeship.io!
+Feel free to email the creator, Kamrin Klauschie, at kamrin.klauschie@gmail.com! She'd love to hear from you. 🤗
 
 # Acknowledgements 👊
+This project wouldn't be possible without the support and cheerleading of Marcos Cannabrava (https://github.com/marcoscannabrava). You should hire him! 
