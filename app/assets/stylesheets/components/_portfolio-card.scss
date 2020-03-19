@@ -1,14 +1,18 @@
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
 .portfolio-card {
   min-width: 400px;
   max-width: 450px;
-  margin: auto;
+  margin-bottom: 50px;
   overflow: hidden;
   display: grid;
   grid: 340px auto auto/repeat(3, minmax(80px, 1fr));
-  grid-gap: 10px;
-  margin: 0;
   background-color: $red;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
 }
 
@@ -24,24 +28,38 @@
 }
 
 .portfolio-card-title {
-  margin-bottom: 10px;
+  font-family: $brand-font;
+  font-size: 24px;
   grid-column: span 3;
   margin: 20px 25px 0;
 }
 
 .portfolio-card-description {
-
+  font-family: $accent-font;
+  font-size: 16px;
 }
 
 .portfolio-card-classification {
+  font-family: $body-font;
+  font-size: 12px;
   margin: 5px 25px;
 }
 
 .portfolio-stats-info {
+  font-size: 12px;
+  font-family: $brand-font;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .portfolio-button {
-  grid-column: span 3;
-  margin: 0 25px 25px;
+  grid-column: span 1;
+  font-color: $white;
+  margin: 15px 25px 25px 25px;
+  font-family: $brand-font;
+  font-size: 14px;
+  text-align: center;
+  background-color: $teal;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
 }
