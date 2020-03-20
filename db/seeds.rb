@@ -7,5 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Pin.destroy_all
 UpdatePinsJob.perform_now

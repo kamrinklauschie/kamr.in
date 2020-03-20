@@ -1,52 +1,44 @@
-.tariffCards {
-  margin: -180px 0 0 -140px;
+.bizcards {
   user-select: none;
   transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
 }
-.tariffCards:after {
+.bizcards:after {
   position: absolute;
-  bottom: -27px;
   left: 5%;
-  content: '';
   width: 65%;
   height: 10px;
   border-radius: 100%;
-  background-image: radial-gradient(rgba(34,50,84,0.04), rgba(34,50,84,0));
 }
-.tariffCards > div {
+.bizcards > div {
   position: relative;
   width: 280px;
   height: 140px;
   border-radius: 12px;
-  color: #fff;
   transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
   transition: all 0.4s ease;
   overflow: hidden;
   cursor: pointer;
 }
-.tariffCards > div:after {
+.bizcards > div:after {
   position: absolute;
-  top: -70px;
-  left: 0;
-  content: '';
   width: 200%;
   height: 200%;
-  background-image: linear-gradient(60deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.1), rgba(255,255,255,0) 80%);
   transform: translateX(-100%);
 }
-.tariffCards > div img {
+.bizcards > div img {
   margin-top: 15px;
   pointer-events: none;
 }
-.tariffCards > div h3 {
+.bizcards > div h3 {
+  font-family: $sama-font;
   position: absolute;
   bottom: 28px;
   left: 15px;
   font-size: 18px;
   font-weight: 800;
 }
-.tariffCards > div span {
+.bizcards > div span {
   position: absolute;
   font-weight: 700;
   bottom: 15px;
@@ -55,33 +47,37 @@
   font-weight: 600;
   opacity: 0.8;
 }
-.tariffCards > div.economy {
+.bizcards > div.devbootcamp {
+  font-family: $dbc-font;
+  color: #19ABB5;
   margin-top: 0;
   z-index: 3;
-  background-color: $purple;
-  background-image: linear-gradient(135deg, #bd7be8, #8063e1);
-  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #8063e1;
+  background-color: #C8C8C8;
+  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #C8C8C8;
 }
-.tariffCards > div.premiumeconomy {
+.bizcards > div.sama {
+  font-family: $sama-font;
+  color: white;
   margin-top: -70px;
   z-index: 2;
-  background-color: $red;
-  background-image: linear-gradient(135deg, #7f94fc, #3f58e3);
-  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #3f58e3;
+  background-color: #FFD503;
+  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #FFD503;
 }
-.tariffCards > div.business {
+.bizcards > div.angelhack {
+  font-family: $angelhack-font;
+  color: white;
   margin-top: -70px;
   z-index: 1;
-  background-color: $orange;
-  background-image: linear-gradient(135deg, #21bbfe, #2c6fd1);
-  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #2c6fd1;
+  background-color: #BF1422;
+  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #BF1422;
 }
-.tariffCards > div.first {
+.bizcards > div.tedxucirvine {
+  font-family: $tedx-font;
+  color: $white;
   margin-top: -70px;
-  background-color: $yellow;
-  background-image: linear-gradient(135deg, #415197, #352f64);
-  box-shadow: 5px 5px 60px rgba(34,50,84,0.1), 1px 1px 0px 1px #352f64;
+  background-color: $black;
+  box-shadow: 5px 5px 60px rgba(34,50,84,0.1), 1px 1px 0px 1px $black;
 }
-.tariffCards > div:hover {
+.bizcards > div:hover {
   transform: rotateX(30deg) rotateY(-15deg) rotate(30deg) translate(-25px, 50px);
 }
