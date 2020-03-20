@@ -22,7 +22,9 @@ class UpdatePinsJob < ApplicationJob
   end
 
   def perform
-    boards_array = ["interior-design", "patterns-textures", "heroes", "libraries", "coffee-shops", "travel", "art", "plants"]
+    boards_array = ["interior-design", "patterns-textures", "heroes", "libraries", "coffee-shops"]
+
+     # "travel", "art", "plants"
 
     boards_array.each do |board|
       fetch_pinterest_api(board)
