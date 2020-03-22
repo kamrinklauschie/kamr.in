@@ -13,13 +13,13 @@
 }
 
 .btn-nav {
-  color: white;
-  padding: 2px 8px;
-  border-radius: 5px;
+  color: white !important;
+  padding: 6px 10px !important;
+  border-radius: 10px !important;
   background: $teal;
-  transition: background 0.3s ease;
   font-family: $accent-font;
   margin-left: 10px;
+  align-items: center;
 }
 
 .btn-nav:hover {

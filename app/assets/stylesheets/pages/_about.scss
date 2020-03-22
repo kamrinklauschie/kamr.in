@@ -75,6 +75,12 @@ background: linear-gradient(to right, rgba(57,131,221,1) 25%, rgba(74,93,230,1) 
   color: $black;
 }
 
+.about-bizcards {
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+
 .about h2 {
   margin-top: 50px;
   font-size: 40px;

@@ -1,6 +1,6 @@
 $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
-.media-options {
+.project-options {
   display:flex;
   flex-direction:row;
   align-items:stretch;
@@ -13,13 +13,13 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
   @for $i from 1 through 4 {
     @media screen and (max-width:798px - $i*80) {
     min-width:600px - $i*80;
-      .media-option:nth-child(#{6-$i}) {
+      .project-option:nth-child(#{6-$i}) {
         display:none;
       }
     }
   }
 
-.media-option {
+.project-option {
   position: relative;
   overflow:hidden;
   min-width:60px;
@@ -36,7 +36,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
     }
   }
 
-  &.media-active {
+  &.project-active {
     flex-grow:10000;
     transform:scale(1);
     max-width:600px;
@@ -44,42 +44,42 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
     border-radius:40px;
     background-size:auto 100%;
 
-      .media-shadow {
+      .project-shadow {
         box-shadow:inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
       }
 
-      .media-label {
+      .project-label {
         bottom:20px;
         left:20px;
 
-        .media-info > div {
+        .project-info > div {
           left:0px;
           opacity:1;
         }
       }
     }
 
-    &:not(.media-active) {
+    &:not(.project-active) {
       flex-grow:1;
       border-radius:30px;
 
-      .media-shadow {
+      .project-shadow {
         bottom:-40px;
         box-shadow:inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
       }
 
-      .media-label {
+      .project-label {
         bottom:10px;
         left:10px;
 
-        .media-info > div {
+        .project-info > div {
           left:20px;
           opacity:0;
         }
       }
     }
 
-    .media-shadow {
+    .project-shadow {
       position: absolute;
       bottom:0px;
       left:0px;
@@ -88,14 +88,14 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
     }
 
-    .media-label {
+    .project-label {
       display:flex;
       position: absolute;
       right:0px;
       height:40px;
       transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 
-      .media-img img {
+      .project-img {
         display:flex;
         flex-direction:row;
         justify-content:center;
@@ -108,7 +108,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
         color:var(--defaultBackground);
       }
 
-      .media-info {
+      .project-info {
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -121,13 +121,13 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
           transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
         }
 
-        .media-main {
+        .project-main {
           font-family: $brand-font;
           font-weight:bold;
           font-size: 18px;
         }
 
-        .media-sub {
+        .project-sub {
           font-family: $headers-font;
           transition-delay:.1s;
           font-size: 12px;
