@@ -101,3 +101,52 @@ body {
   max-width: 1140px;
   margin: auto;
 }
+
+.fa-twitter-square {
+  color: $font-red;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-facebook-square {
+  color: $font-orange;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-linkedin {
+  color: $font-yellow;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-pinterest-square {
+  color: $font-seafoam;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-instagram-square {
+  color: $font-blue;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-github-square {
+  color: $font-purple;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-envelope, .fa-rss-square {
+  color: $black;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
