@@ -5,6 +5,11 @@ class PagesController < ApplicationController
     boards_array.each do |board|
       @pins[board] = Pin.random_pin(board)
     end
+
+    @quotes = []
+    @quotes.push(Quote.random_quote('short'))
+    @quotes.push(Quote.random_quote('short'))
+    @quotes.push(Quote.random_quote('long'))
   end
 
   def about
