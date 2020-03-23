@@ -9,7 +9,7 @@
 <!--   Quote 1 -->
 
     <div class="masonry-item">
-      <div class="masonry-content short-quote">
+      <div class="masonry-content" id="short-quote1">
         <%=  @quotes.empty? ? "" : "#{@quotes[0].content} - #{@quotes[0].author}" %>
       </div>
     </div>
@@ -31,7 +31,7 @@
 
 <!--   Quote 2 -->
   <div class="masonry-item">
-    <div class="masonry-content long-quote">
+    <div class="masonry-content" id="long-quote">
       <%=  @quotes.empty? ? "" : "#{@quotes[2].content} - #{@quotes[2].author}" %>
     </div>
   </div>
@@ -58,7 +58,7 @@
 
 <!--   Quote 3 -->
   <div class="masonry-item">
-    <div class="masonry-content short-quote">
+    <div class="masonry-content" id="short-quote2">
       <%=  @quotes.empty? ? "" : "#{@quotes[1].content} - #{@quotes[1].author}" %>
     </div>
   </div>
