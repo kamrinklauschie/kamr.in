@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_23_005904) do
+ActiveRecord::Schema.define(version: 2020_03_23_163147) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 2020_01_23_005904) do
     t.string "board"
     t.integer "width"
     t.integer "height"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "quotes", force: :cascade do |t|
+    t.string "content"
+    t.string "author"
+    t.string "quote_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
