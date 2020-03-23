@@ -20,14 +20,19 @@ Coming Soon!
 
 # Roadmap 🗺️
 
-### Deployed 🚦
+### Deployed v1.0 🚦
 - Inspiration Mode: fills a pre-determined slot (from a categorized Pinterest board imported into a Masonry slot on the Home page) with a randomized selection of curated content, selects new randomized content on page reload
 - Inspiration Mode: on hover, Masonry card flips to reveal the card category in text on the back of the card, with a link to the Pin on click, using a custom color on the background of the card pulled through the Pinterest API
 - Currently supported inspiration categories include Interior Design, Patterns & Textures, Short Quotes, Heroes, Libraries, Travel, Art, Plants, Long Quotes, and Coffee Shops
 
-### Coming Soon 🚧
+### Coming Soon v2.0 🚧
 - Filter Mode: displays a selectable set of category labels and all of the currently stored instances of the selected category, can display multiple category labels together, simulates infinite scroll in a masonry layout 
 - Mode Toggle: us an interactive toggle button on the Home page, the user is able to flip back and forth between Inspiration Mode and Filter Mode
+- RSS Feed and Email Newsletter Subscription features (1 randomly generated set of inspiration emailed or shared per day)
+
+### Coming Eventually v3.0 🚀
+- Add more inspiration categories including Podcasts, Videos, Movies & Shows, Books, etc.
+- Expand available content within v1.0 inspiration categories
 
 # Support 🧩
 Feel free to email the creator, Kamrin Klauschie, at kamrin.klauschie@gmail.com! She'd love to hear from you. 🤗
