@@ -10,13 +10,14 @@ For years, the swissmiss (https://www.swiss-miss.com/) blog run by Tina Roth Eis
 - Responsive CSS Only Masonry Layout (Home Page)
 - SVG Images for Performant Styling (Colorful Blobs 🎨)
 - CSS Only Transparent Text Gradient (Current Location, About Page 🌈)
-- CSS Animation (Business Cards, About Page)
-- Interactive Slider Cards (Projects and Media Cards, Portfolio Page)
 - Pinterest API Integration
 - New, Randomized Inspiration on Page Reload (🌱)
 
 # Issues 🐛
-Coming Soon!
+- The colorful blobs placement (SVGs) need to be customized by page length for improved styling 
+- Some images' quality and styling from my Pinterest account are bizarre or problematic (Ursula Burns has a Xerox label on the photo, an Interior Design image has the Instagram handle included in the image, etc.)
+- There are only 4 long quotes, making that section very apt to repeat 
+- The project needs to have copyrights and links to image sources on each card ASAP
 
 # Roadmap 🗺️
 
@@ -26,13 +27,14 @@ Coming Soon!
 - Currently supported inspiration categories include Interior Design, Patterns & Textures, Short Quotes, Heroes, Libraries, Travel, Art, Plants, Long Quotes, and Coffee Shops
 
 ### Coming Soon v2.0 🚧
+- Masonry Update: each card, on hover, flips to reveal the category, link to source, and any relevant copyright information on the back of the card
 - Filter Mode: displays a selectable set of category labels and all of the currently stored instances of the selected category, can display multiple category labels together, simulates infinite scroll in a masonry layout 
 - Mode Toggle: us an interactive toggle button on the Home page, the user is able to flip back and forth between Inspiration Mode and Filter Mode
 - RSS Feed and Email Newsletter Subscription features (1 randomly generated set of inspiration emailed or shared per day)
 
 ### Coming Eventually v3.0 🚀
 - Add more inspiration categories including Podcasts, Videos, Movies & Shows, Books, etc.
-- Expand available content within v1.0 inspiration categories
+- Expand quality and volume of available content within v1.0 inspiration categories, especially more long quotes 
 
 # Support 🧩
 Feel free to email the creator, Kamrin Klauschie, at kamrin.klauschie@gmail.com! She'd love to hear from you. 🤗
