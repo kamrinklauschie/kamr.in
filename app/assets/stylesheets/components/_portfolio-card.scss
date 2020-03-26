@@ -1,65 +1,115 @@
 .portfolio-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
 }
 
-.portfolio-card {
-  min-width: 400px;
-  max-width: 450px;
-  margin-bottom: 50px;
+.portfolio-card-apprenticeshipio, .portfolio-card-datesy, .portfolio-card-kamrin, .portfolio-card-nuzzle, .portfolio-card-allyshipio, .portfolio-card-technicalcareersio {
+  min-width: 250px;
+  max-width: 281.25px;
+  margin-bottom: 100px;
   overflow: hidden;
   display: grid;
-  grid: 340px auto auto/repeat(3, minmax(80px, 1fr));
-  background-color: $red;
+  grid: 212.5px auto auto/repeat(3, minmax(50px, 1fr));
   border-radius: 10px;
   box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
 }
 
-.portfolio-img {
-  grid-column: span 3;
-  grid-column-start: span 3;
-  grid-column-end: auto;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-bottom: 7px solid black;
+.portfolio-card-apprenticeshipio {
+  background-color: $seafoam;
+}
+
+.portfolio-card-datesy {
+  background-color: $dark-green;
+}
+
+.portfolio-card-kamrin {
+  background-color: $blue;
+}
+
+.portfolio-card-nuzzle {
+  background-color: $yellow;
+}
+
+.portfolio-card-allyshipio {
   background-color: $orange;
+}
+
+.portfolio-card-technicalcareersio {
+  background-color: $red;
+}
+
+.portfolio-img-apprenticeshipio, .portfolio-img-datesy, .portfolio-img-kamrin, .portfolio-img-nuzzle, .portfolio-img-allyshipio, .portfolio-img-technicalcareersio {
+  grid-column: span 3;
+  background-size: cover;
+  border-bottom: 5px solid black;
+}
+
+.portfolio-img-apprenticeshipio {
+  background-image: url("https://i.imgur.com/ziMEgDy.png");
+}
+
+.portfolio-img-datesy {
+  background-image: url("https://i.imgur.com/uT1FAFY.png");
+}
+
+.portfolio-img-kamrin {
+  background-image: url("https://i.imgur.com/OlTeaF0.png");
+}
+
+.portfolio-img-nuzzle {
+  background-image: url("https://i.imgur.com/FjwWmuM.png");
+}
+
+.portfolio-img-allyshipio, .portfolio-img-technicalcareersio {
+  background-color: $light-gray;
+  font-family: $brand-font;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  font-size: 32px;
+  border-top: 5px solid black;
 }
 
 .portfolio-card-title {
   font-family: $brand-font;
-  font-size: 24px;
+  font-size: 22px;
   grid-column: span 3;
-  margin: 20px 25px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio-card-description {
   font-family: $accent-font;
-  font-size: 16px;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 10px;
 }
 
 .portfolio-card-classification {
-  font-family: $body-font;
-  font-size: 12px;
-  margin: 5px 25px;
+  font-family: $brand-font;
+  font-size: 15px;
+}
+
+.portfolio-stats-title {
+  font-family: $brand-font;
+  font-size: 15px;
+  width: 60px;
+  height: 30px;
+  text-align: center;
 }
 
 .portfolio-stats-info {
-  font-size: 12px;
-  font-family: $brand-font;
-  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: $accent-font;
   text-decoration: none;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.portfolio-button {
-  grid-column: span 1;
-  font-color: $white;
-  margin: 15px 25px 25px 25px;
-  font-family: $brand-font;
+.devicon {
   font-size: 14px;
-  text-align: center;
-  background-color: $teal;
-  border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+  color: $font-yellow;
 }
