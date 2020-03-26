@@ -9,6 +9,14 @@
   color: $teal;
 }
 
+.navbar-brand:hover, .nav-item:hover {
+   transform: scale(1.1);
+}
+
+.navbar-brand:hover {
+  color: $teal !important;
+}
+
 .nav-item {
   padding-left: 10px;
   padding-right: 10px;
