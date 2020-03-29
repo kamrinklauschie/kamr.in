@@ -5,6 +5,8 @@
 # Background 💡
 For years, the swissmiss (https://www.swiss-miss.com/) blog run by Tina Roth Eisenburg has been a design and inspiration staple in a healthy information diet for millions of designers and creatives. But why is it chronological? Typical chronological blog design is lame and outdated. It's time for a fresh and exciting re-invention of a classic. 
 
+#### Inspiration words: Colorful, Playful, Modern, Deep, Light, Dynamic, Exciting, Fun 
+
 # Features 💣
 - Isometric Background Layout (All Pages)
 - Responsive CSS Only Masonry Layout (Home Page)
