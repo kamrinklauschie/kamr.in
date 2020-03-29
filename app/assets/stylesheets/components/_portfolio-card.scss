@@ -113,3 +113,18 @@
   font-size: 14px;
   color: $font-yellow;
 }
+
+@media only screen and (max-width: 600px) {
+  .portfolio-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-card-apprenticeshipio, .portfolio-card-datesy, .portfolio-card-kamrin, .portfolio-card-nuzzle, .portfolio-card-allyshipio, .portfolio-card-technicalcareersio {
+    margin: 0 0 20px;
+  }
+  .portfolio-stats-info {
+    margin: auto;
+  }
+  .portfolio-button {
+    margin-top: 20px;
+  }
+}
