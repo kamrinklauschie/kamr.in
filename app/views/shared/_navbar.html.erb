@@ -1,10 +1,10 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-kamrin">
-  <div class="red-blob-container">
-  </div>
   <%= link_to "K", home_path, class: "navbar-brand" %>
-  </a>
-  <div class="">
-    <ul class="navbar-nav mr-auto">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible" aria-controls="collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsible">
+    <ul class="navbar-nav">
       <li class="nav-item">
         <%= link_to "About", about_path, class: "nav-link" %>
       </li>
@@ -15,7 +15,5 @@
         <%= link_to "Contact Me", href="mailto: kamrin.klauschie@gmail.com", class: "btn-nav nav-link" %>
       </li>
     </ul>
-  </div>
-  <div class="orange-blob-container">
   </div>
 </div>

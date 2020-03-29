@@ -16,3 +16,18 @@
   text-align: center;
   font-family: $brand-font;
 }
+
+.mini-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .mini-banner {
+    height: 90px;
+  }
+  .mini-banner h1 {
+    font-size: 40px;
+  }
+}
