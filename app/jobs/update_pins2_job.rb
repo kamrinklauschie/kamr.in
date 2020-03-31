@@ -1,6 +1,6 @@
 require 'open-uri'
 
-class UpdatePinsJob < ApplicationJob
+class UpdatePins2Job < ApplicationJob
   queue_as :default
 
   def fetch_pinterest_api(board)
@@ -22,9 +22,7 @@ class UpdatePinsJob < ApplicationJob
   end
 
   def perform
-    boards_array = ["interior-design", "patterns-textures", "heroes", "libraries", "coffee-shops"]
-
-     # "travel", "art", "plants"
+    boards_array = ["coffee-shops", "travel", "art", "plants"]
 
     boards_array.each do |board|
       fetch_pinterest_api(board)
