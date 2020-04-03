@@ -1,40 +1,26 @@
 import "bootstrap";
 
 var colors = [
-
-  // Red
   [ "#ec5b55", "#af1f0e"],
-  // Orange
   [ "#f08c34", "#c55123"],
-  // Yellow
   [ "#f9dd6c", "#d8ab3a"],
-  // Dark Green
   [ "#388174", "#73fbe2"],
-  // Teal
   [ "#49c5b6", "#255a55"],
-  // Seafoam
   [ "#a9d1d5", "#5a8085"],
-  // Blue
   [ "#3983dd", "#a5d3fb"],
-  // Dark Blue
   [ "#4a5de6", "#b0bafa"],
-  // Purple
   [ "#7a55e7", "#bdaae8"]
 ];
 
-function getRandom(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
-}
+let color = colors.splice(Math.floor(Math.random() * Math.floor(8)), 1)[0];
+document.getElementById("short-quote1").style.color = color[1];
+document.getElementById("short-quote1").style.backgroundColor = color[0];
 
-var rand = getRandom(0, 8)
+color = colors.splice(Math.floor(Math.random() * Math.floor(7)), 1)[0];
+document.getElementById("long-quote").style.color = color[1];
+document.getElementById("long-quote").style.backgroundColor = color[0];
 
-background_color = colors[rand][0]
-font_color = colors[rand][1]
-
-document.body.style.backgroundColor = background_color
-document.body.style.color = font_color
-document.getElementById("button1").style.color = font_color
-document.getElementById("button2").style.color = font_color
+color = colors.splice(Math.floor(Math.random() * Math.floor(6)), 1)[0];
+document.getElementById("short-quote2").style.color = color[1];
+document.getElementById("short-quote2").style.backgroundColor = color[0];
 
